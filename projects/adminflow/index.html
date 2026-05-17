@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdminFlow | Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">Admin<span>Flow</span></div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Analytics</a>
+        <a href="#">Users</a>
+        <a href="#">Orders</a>
+        <a href="#">Settings</a>
+      </nav>
+      <a href="/" class="back-link">← Portfolio</a>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="sidebar-toggle" id="sidebarToggle" type="button">☰</button>
+        <h1>Dashboard Overview</h1>
+        <div class="topbar-actions">
+          <input type="search" placeholder="Search..." class="search-input">
+          <div class="avatar">MS</div>
+        </div>
+      </header>
+
+      <section class="stats-grid" id="statsGrid"></section>
+
+      <section class="charts-row">
+        <div class="card glass chart-card">
+          <h2>Revenue Analytics</h2>
+          <canvas id="revenueChart" height="120"></canvas>
+        </div>
+        <div class="card glass chart-card">
+          <h2>Traffic Sources</h2>
+          <div class="donut-wrap">
+            <canvas id="trafficChart" width="160" height="160"></canvas>
+            <ul class="legend" id="trafficLegend"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card glass table-card">
+        <div class="table-header">
+          <h2>Recent Orders</h2>
+          <button class="btn-sm" type="button" id="exportBtn">Export</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="ordersTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

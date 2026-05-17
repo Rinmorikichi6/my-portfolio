@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopSphere | E-Commerce Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Shop<span>Sphere</span></a>
+      <nav class="nav" id="nav">
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-icon" id="authBtn" type="button" aria-label="Account">&#128100;</button>
+        <button class="btn-icon cart-toggle" id="cartToggle" type="button" aria-label="Cart">
+          &#128722; <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-badge">New Collection 2026</p>
+        <h1>Premium Products.<br>Seamless Shopping.</h1>
+        <p class="hero-desc">Discover curated electronics, fashion, and lifestyle products with secure checkout and fast delivery.</p>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card glass">
+          <div class="stat"><strong>2.4k+</strong><span>Products</span></div>
+          <div class="stat"><strong>98%</strong><span>Happy Clients</span></div>
+          <div class="stat"><strong>24/7</strong><span>Support</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories" id="categories">
+    <div class="container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-pills" id="categoryFilters">
+        <button class="pill active" data-category="all" type="button">All</button>
+        <button class="pill" data-category="electronics" type="button">Electronics</button>
+        <button class="pill" data-category="fashion" type="button">Fashion</button>
+        <button class="pill" data-category="home" type="button">Home</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-inner glass">
+      <h2>Built for Modern Commerce</h2>
+      <p>ShopSphere delivers a production-ready storefront experience with cart persistence, category filtering, and responsive product cards optimized for every device.</p>
+    </div>
+  </section>
+
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-btn" id="closeCart" type="button">&times;</button>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <div class="cart-footer">
+      <p class="cart-total">Total: <strong id="cartTotal">$0.00</strong></p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" type="button">Checkout</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-content glass">
+      <button class="close-btn modal-close" id="closeAuth" type="button">&times;</button>
+      <h3>Welcome to ShopSphere</h3>
+      <p>Sign in to track orders and save your cart across devices.</p>
+      <form id="authForm">
+        <input type="email" placeholder="Email address" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 ShopSphere. E-Commerce Platform Demo.</p>
+      <a href="/">Back to Portfolio</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

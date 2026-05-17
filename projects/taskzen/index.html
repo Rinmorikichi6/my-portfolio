@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskZen | Task Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1 class="logo">Task<span>Zen</span></h1>
+      <a href="/" class="back-link">← Portfolio</a>
+    </header>
+
+    <main class="container">
+      <section class="intro glass">
+        <h2>Focus on what matters</h2>
+        <p>Organize tasks, track progress, and stay productive with a clean task management workflow.</p>
+      </section>
+
+      <section class="task-form glass">
+        <input type="text" id="taskInput" placeholder="What do you need to accomplish?" maxlength="120">
+        <select id="taskPriority">
+          <option value="low">Low Priority</option>
+          <option value="medium" selected>Medium Priority</option>
+          <option value="high">High Priority</option>
+        </select>
+        <button class="btn-add" id="addTask" type="button">Add Task</button>
+      </section>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all" type="button">All</button>
+        <button class="filter" data-filter="active" type="button">Active</button>
+        <button class="filter" data-filter="completed" type="button">Completed</button>
+      </div>
+
+      <p class="task-stats" id="taskStats">0 tasks</p>
+      <ul class="task-list" id="taskList"></ul>
+      <button class="clear-btn" id="clearCompleted" type="button">Clear Completed</button>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

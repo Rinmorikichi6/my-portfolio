@@ -126,53 +126,48 @@ const localStorageData = {
   projects: [
     {
       id: 1,
-      title: 'E-Commerce Platform',
+      title: 'ShopSphere',
       category: 'fullstack',
-      description: 'Full-featured e-commerce with cart, checkout, admin panel.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600',
-      technologies: ['React', 'Node.js', 'MongoDB'],
-      liveLink: '/projects/ecommerce/index.html',
-      githubLink: 'https://github.com'
+      description: 'Full stack ecommerce platform with responsive UI, cart system, authentication, and product management.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
+      liveLink: '/projects/shopsphere/index.html',
+      githubLink: 'https://github.com/Rinmorikichi6'
     },
     {
       id: 2,
-      title: 'Chat Application',
-      category: 'web',
-      description: 'Real-time messaging with beautiful UI.',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600',
-      technologies: ['JavaScript', 'Socket.io'],
-      liveLink: '/projects/chat-app/index.html',
-      githubLink: 'https://github.com'
+      title: 'AdminFlow',
+      category: 'frontend',
+      description: 'Professional admin dashboard with analytics cards, charts, tables, and responsive dashboard layout.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: '/projects/adminflow/index.html',
+      githubLink: 'https://github.com/Rinmorikichi6'
     },
     {
       id: 3,
-      title: 'Admin Dashboard',
-      category: 'fullstack',
-      description: 'Analytics dashboard with charts and tables.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600',
-      technologies: ['React', 'Chart.js'],
-      liveLink: '/projects/admin-dashboard/index.html',
-      githubLink: 'https://github.com'
+      title: 'TaskZen',
+      category: 'web',
+      description: 'Task management application with task creation, filtering, completion tracking, and responsive interface.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      liveLink: '/projects/taskzen/index.html',
+      githubLink: 'https://github.com/Rinmorikichi6'
     },
     {
       id: 4,
-      title: 'Task Manager',
-      category: 'web',
-      description: 'Productivity app with local storage.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
-      liveLink: '/projects/task-manager/index.html',
-      githubLink: 'https://github.com'
+      title: 'ChatNest',
+      category: 'fullstack',
+      description: 'Modern chat application with responsive messaging interface and interactive chat layout.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Node.js'],
+      liveLink: '/projects/chatnest/index.html',
+      githubLink: 'https://github.com/Rinmorikichi6'
     },
     {
       id: 5,
-      title: 'Portfolio Template',
-      category: 'frontend',
-      description: 'Beautiful portfolio with responsive design.',
-      image: 'https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600',
+      title: 'NexaAgency',
+      category: 'web',
+      description: 'Professional business website with modern UI, services section, responsive design, and contact system.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveLink: '/projects/portfolio-template/index.html',
-      githubLink: 'https://github.com'
+      liveLink: '/projects/nexaagency/index.html',
+      githubLink: 'https://github.com/Rinmorikichi6'
     }
   ]
 };

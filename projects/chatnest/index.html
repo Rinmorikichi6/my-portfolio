@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatNest | Chat Application</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="chat-app">
+    <aside class="contacts" id="contactsPanel">
+      <div class="contacts-header">
+        <h1>Chat<span>Nest</span></h1>
+        <a href="/" class="back-link">Portfolio</a>
+      </div>
+      <div class="search-box">
+        <input type="search" id="contactSearch" placeholder="Search conversations...">
+      </div>
+      <ul class="contact-list" id="contactList"></ul>
+    </aside>
+    <main class="chat-main">
+      <header class="chat-header">
+        <button class="menu-btn" id="menuBtn" type="button">☰</button>
+        <div class="chat-user">
+          <div class="avatar" id="activeAvatar">AM</div>
+          <div>
+            <h2 id="activeName">Alex Morgan</h2>
+            <span class="status online" id="activeStatus">Online</span>
+          </div>
+        </div>
+      </header>
+      <div class="messages" id="messages"></div>
+      <form class="message-form" id="messageForm">
+        <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off" required>
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

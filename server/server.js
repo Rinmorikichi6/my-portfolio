@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static files
 app.use(express.static(path.join(__dirname, '../client')));
+app.use('/projects', express.static(path.join(__dirname, '../projects')));
 
 // Import routes
 const authRoutes = require('./routes/auth');
@@ -43,8 +44,11 @@ mongoose.connect(MONGODB_URI, {
   .then(() => console.log('✅ Connected to MongoDB'))
   .catch(err => console.log('❌ MongoDB error:', err.message));
 
-// Serve main HTML for SPA
+// Serve main HTML for SPA (skip project demo pages)
 app.get('*', (req, res) => {
+  if (req.path.startsWith('/projects/')) {
+    return res.status(404).send('Project not found');
+  }
   res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
